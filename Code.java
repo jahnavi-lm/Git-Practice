@@ -1,6 +1,6 @@
 class Code {
     public static void main(String[] args) {
-        int[] numbers = {10, 21, 4, 45, 66, 93, 1};
+        int[] numbers = {10, 21, 4, 45, 66, 93, 1, 7, 3};
 
         System.out.println("Even Numbers:");
         for (int number : numbers) {
@@ -8,6 +8,7 @@ class Code {
                 System.out.print(number + " ");
             }
         }
+        System.out.println();
 
         System.out.println("\nOdd Numbers:");
         for (int number : numbers) {
@@ -15,13 +16,16 @@ class Code {
                 System.out.print(number + " ");
             }
         }
-
-        System.out.println("\nPrime Numbers:");
+        System.out.println();
+        
+        int count = 0;
+        System.out.println("\nCount Prime Numbers:");
         for (int number : numbers) {
             if (isPrime(number)) {
-                System.out.print(number + " ");
+                count++;
             }
         }
+        System.out.println(count);
     }
 
     public static boolean isPrime(int number) {
