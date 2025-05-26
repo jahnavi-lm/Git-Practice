@@ -13,9 +13,7 @@ class Code {
             if (number % 2 != 0) {
                 System.out.print(number + " ");
             }
-        }
-        System.out.println();
-        
+        }        
         int count = 0;
         System.out.println("\nCount Prime Numbers:");
         for (int number : numbers) {
