@@ -8,8 +8,6 @@ class Code {
                 System.out.print(number + " ");
             }
         }
-        System.out.println();
-
         System.out.println("\nOdd Numbers:");
         for (int number : numbers) {
             if (number % 2 != 0) {
